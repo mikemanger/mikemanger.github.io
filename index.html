@@ -18,7 +18,7 @@
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <script>
     $(function() {
-        $.getJSON( './dictonary_m.json?callback=?"', function( data ) {
+        $.getJSON( './dictionary_m.json?callback=?', function( data ) {
             var word_1 = data[ Math.floor( Math.random() * data.length ) ];
             var word_2 = data[ Math.floor( Math.random() * data.length ) ];
             document.title = "Mike Manger's " + word_1 + " " + word_2;
