@@ -1,20 +1,26 @@
 <!doctype html>
 <html lang="en-gb">
 <head>
-    <title>Mike Manger</title>
-    <style>
-        body {
+	<title>Mike Manger</title>
+	<style>
+		body {
+			background: #1d1f21;
+			color: #c5c8c6;
 			font-family: monospace;
+			max-width: 700px;
+		}
+		a {
+			color: #f0c674;
 		}
 		.blink {
-            animation: blink-animation 1s steps(5, start) infinite;
-        }
-        @keyframes blink-animation {
-            to {
-                visibility: hidden;
-            }
-        }
-    </style>
+			animation: blink-animation 1s steps(5, start) infinite;
+		}
+		@keyframes blink-animation {
+			to {
+				visibility: hidden;
+			}
+		}
+	</style>
 </head>
 <body>
 <p>Hi.<span class="blink" aria-hidden="true">_</span></p>
@@ -29,19 +35,19 @@
 <p>
 	I'm also pretty keen on the environment. I won't bore you talking
 	about it (that is what cycling is for), but one of the easiest ways
-	to help is to use a green energy supplier. UK's biggest is Bulb
+	to help is to use a green energy supplier. UK's biggest is Bulb,
 	which has decent rates and a simple tariff. My referral link is
 	<a href="https://bulb.me/michaelm5705">bulb.me/michaelm5705</a>.
 </p>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <script>
-    $(function() {
-        $.getJSON( './dictionary_m.json', function( data ) {
-            var word_1 = data[ Math.floor( Math.random() * data.length ) ];
-            var word_2 = data[ Math.floor( Math.random() * data.length ) ];
-            document.title = "Mike Manger's " + word_1 + " " + word_2;
-        });
-    });
+	$(function() {
+		$.getJSON( './dictionary_m.json', function( data ) {
+			var word_1 = data[ Math.floor( Math.random() * data.length ) ];
+			var word_2 = data[ Math.floor( Math.random() * data.length ) ];
+			document.title = "Mike Manger's " + word_1 + " " + word_2;
+		});
+	});
 </script>
 </body>
 </html>
