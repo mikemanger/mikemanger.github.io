@@ -7,6 +7,16 @@
 			background: #1d1f21;
 			color: #c5c8c6;
 			font-family: monospace;
+			margin: 0;
+			padding: 8px;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			right: 0;
+			left: 0;
+		}
+
+		main {
 			max-width: 700px;
 		}
 
@@ -35,32 +45,28 @@
 	</style>
 </head>
 <body>
-<h1>Mike Manger</h1>
-<p>Hi, I'm a web developer from Shrewsbury, England.</p>
-<p>
-	I spend most of my free time cycling the Shropshire hills
-	(<a href="https://www.strava.com/athletes/19849210">you can find me
-	on Strava 🚴</a>), playing board games and listening to music
-	(<a href="https://www.last.fm/user/MikeManger">I've been scrobbling
-	since 2005</a>). I also enjoy the occasional pint of ale.
-</p>
-<p>
-	I'm also pretty keen on the environment. I won't bore you talking
-	about it (that is what cycling is for), but one of the easiest ways
-	to help is to use a green energy supplier. The UK's biggest is Bulb,
-	which has decent rates and a simple tariff. My referral link is
-	<a href="https://bulb.me/michaelm5705">bulb.me/michaelm5705</a>,
-	which saves us both &pound;50.<span class="blink" aria-hidden="true">_</span>
-</p>
+    <main>
+		<h1>Mike Manger</h1>
+		<p>Hi, I'm a web developer from Shrewsbury, England.</p>
+		<p>
+			I spend most of my free time cycling the Shropshire hills
+			(<a href="https://www.strava.com/athletes/19849210">you can find me
+			on Strava 🚴</a>), playing board games and listening to music
+			(<a href="https://www.last.fm/user/MikeManger">I've been scrobbling
+			since 2005</a>). I also enjoy the occasional pint of ale.
+		</p>
+		<p>
+			I'm also pretty keen on the environment. I won't bore you talking
+			about it (that is what cycling is for), but one of the easiest ways
+			to help is to use a green energy supplier. The UK's biggest is Bulb,
+			which has decent rates and a simple tariff. My referral link is
+			<a href="https://bulb.me/michaelm5705">bulb.me/michaelm5705</a>,
+			which saves us both &pound;50.<span class="blink" aria-hidden="true">_</span>
+		</p>
+	</main>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-<script>
-	$(function() {
-		$.getJSON( './dictionary_m.json', function( data ) {
-			var word_1 = data[ Math.floor( Math.random() * data.length ) ];
-			var word_2 = data[ Math.floor( Math.random() * data.length ) ];
-			document.title = "Mike Manger's " + word_1 + " " + word_2;
-		});
-	});
-</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta@0.5.21/dist/vanta.net.min.js"></script>
+<script src="./scripts.js"></script>
 </body>
 </html>
