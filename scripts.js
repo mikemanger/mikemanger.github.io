@@ -15,7 +15,7 @@ const DARK_PRIMARY_COLOR = '#fa3b7d';
 let background = DEFAULT_BACKGROUND;
 let primaryColor = DEFAULT_PRIMARY_COLOR;
 let animateBackground = true;
-let background = false;
+let vantaLib = false;
 
 if (window.matchMedia) {
 	const IS_DARK = window.matchMedia('(prefers-color-scheme: dark)').matches;
@@ -32,7 +32,7 @@ if (window.matchMedia) {
 }
 
 if ( animateBackground ) {
-	background = VANTA.NET({
+	vantaLib = VANTA.NET({
 		el: 'body',
 		mouseControls: true,
 		touchControls: true,
@@ -57,7 +57,7 @@ function updateDarkMode( isDark ) {
 		primaryColor = DARK_PRIMARY_COLOR;
 	}
 	if ( animateBackground ) {
-		background.setOptions({
+		vantaLib.setOptions({
 			backgroundColor: background,
 			color: primaryColor
 		});
